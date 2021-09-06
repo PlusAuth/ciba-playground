@@ -150,7 +150,7 @@ export default {
           client_notification_token: "token",
           scope: "openid profile read:user write:user",
           audience: 'https://test.buysomething.com',
-          login_hint: "api_1",
+          login_hint: CONFIG.user_id,
           binding_message: this.code,
           request_context: {
             location: {}
@@ -162,7 +162,7 @@ export default {
         })
       })
       Logger.debug('CIBA Request Response', authResponse)
-      this.pollRequest(authResponse.auth_req_id, 1000)
+      this.pollRequest(authResponse.auth_req_id, 5000)
       this.secondsTimerID = generateTimer(authResponse.expires_in || 600)
       this.overlay = true
     }
