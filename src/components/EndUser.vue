@@ -100,7 +100,7 @@ export default {
           'Authorization': `Bearer ${this.authRequest.token}`
         },
         body: new URLSearchParams({
-          auth_req_id: this.authRequest.jti,
+          auth_req_id: this.authRequest.jti || this.authRequest.id,
         })
       })
       this.payment = null
@@ -113,7 +113,7 @@ export default {
           'Authorization': `Bearer ${this.authRequest.token}`
         },
         body: new URLSearchParams({
-          auth_req_id: this.authRequest.jti,
+          auth_req_id: this.authRequest.jti || this.authRequest.id,
           error: 'user_cancelled',
           error_description: 'User cancelled transaction'
         })
