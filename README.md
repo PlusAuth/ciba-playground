@@ -21,7 +21,7 @@ Make sure you have configured/ensured your provider to have/is:
    - `client_secret_jwt` token endpoint auth method
 
 2) Configure your provider/auth service to trigger end-user device by making a `POST` request to `<YOUR_PUBLIC_ADDRESS>:<SERVER_PORT>/prompt_end_user`
-with body containing `authRequest`. Have a look at [src/components/EndUser.vue:82](src/components/EndUser.vue:82)  
+with body containing `authRequest`. Have a look at [src/components/EndUser.vue:82](src/components/EndUser.vue#L82)  
 
 ## Usage
 Clone repository and install dependencies with
