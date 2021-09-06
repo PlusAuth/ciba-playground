@@ -4,7 +4,7 @@
 This is a demonstration of how OpenID CIBA works on a simple use case. 
 
 > **DISCLAIMER:**
-> This project is **NOT** production grade. To simplify implementation, some functions handled in frontend which **SHOULD NOT** be the same in real world applications. 
+> This project is **NOT** production grade. To simplify implementation, some functions handled at client side which **SHOULD NOT** be the same in real world applications. 
 
 Image below demonstrates the flow. To decrease complexity, error cases are excluded.
 ![ciba-poll-flow](public/ciba-poll-flow.png)
